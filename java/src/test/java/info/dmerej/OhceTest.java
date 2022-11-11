@@ -14,7 +14,7 @@ public class OhceTest {
     The following messages are shown to the user:
      - olleh
      - oto
-     - This is a palindrome!
+     - That was a palindrome!
 
     */
   }
