@@ -16,7 +16,7 @@ namespace Ohce.Test
         }
 
         [Test]
-        public void SaysGoodANightWhenHourIs0()
+        public void SaysGoodNightWhenHourIs0()
         {
             Assert.Fail("TODO");
         }
