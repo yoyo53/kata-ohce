@@ -2,6 +2,8 @@ package info.dmerej;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 public class OhceTest {
   @Test
   void testMainLoop() {
@@ -17,5 +19,6 @@ public class OhceTest {
      - That was a palindrome!
 
     */
+    fail("TODO");
   }
 }
