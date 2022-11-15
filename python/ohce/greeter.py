@@ -17,5 +17,5 @@ class Greeter:
             return "Good morning"
         if 12 <= current_hour <= 19:
             return "Good afternoon"
-        if current_hour > 20 or current_hour < 6:
+        if current_hour >= 20 or current_hour < 6:
             return "Good night"
