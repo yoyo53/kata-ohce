@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ohce\Ohce\Ohce.csproj" />
+    <ProjectReference Include="..\Ohce\Ohce.csproj" />
   </ItemGroup>
 
 </Project>
