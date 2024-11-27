@@ -6,8 +6,8 @@ class SystemClock {
 }
 
 class Greeter {
-  constructor () {
-    this.clock = new SystemClock()
+  constructor (clock) {
+    this.clock = clock || new SystemClock()
   }
 
   greet () {
@@ -24,4 +24,4 @@ class Greeter {
   }
 }
 
-module.exports = { Greeter }
+module.exports = { Greeter, SystemClock }
