@@ -1,8 +1,23 @@
 const test = require('tape')
+const UI = require('../ui').UI
+
+class FakeInteractor {
+  constructor (inputs) {
+    this.inputs = inputs
+    this.messages = []
+  }
+
+  readInput () {
+    return this.inputs.shift()
+  }
+
+  printMessage (message) {
+    this.messages.push(message)
+  }
+}
 
 test('main loop', (t) => {
-  /* TODO
-    Given the following inputs:
+  /* Given the following inputs:
     - hello
     - oto
     - quit
@@ -12,6 +27,11 @@ test('main loop', (t) => {
     - oto
     - That was a palindrome!
    */
-  t.fail('TODO')
+
+  const interactor = new FakeInteractor(['hello', 'oto', 'quit'])
+  const ui = new UI(interactor)
+  ui.mainLoop()
+
+  t.deepEqual(interactor.messages, ['olleh', 'oto', 'That was a palindrome!'])
   t.end()
 })
